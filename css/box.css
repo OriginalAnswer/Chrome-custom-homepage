@@ -1,0 +1,23 @@
+.box{
+    border: 1px #000 solid;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.box-today{
+    font-size: 1.8em;
+}
+.box-clock{
+    font-size: 4em;
+}
+.box-greeting{
+    font-size: 2em;
+}
+
+
+.box-search-form{
+    
+}
+.box-search-form input{
+
+}
