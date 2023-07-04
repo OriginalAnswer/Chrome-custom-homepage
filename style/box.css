@@ -1,13 +1,11 @@
 .box{
-    /* border: 1px #000 solid;
-    padding: 10px 30px; */
-    /* text-align: center; */
+    text-align: center;
 }
 
-.box-today
-.box-clock
+.box-today,
+.box-clock,
 .box-greeting{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .box-search{
@@ -17,7 +15,7 @@
     justify-content: center;
 }
 .box-search-form{
-    width: 50%;
+    width: 45%;
     min-width: 300px;
     max-width: 600px;
     display: flex;
@@ -54,12 +52,16 @@
     color: #ff0000;
 }
 
+
+/* --------------------------------- */
+
 .box-quicklink{
     width: 300px;
     padding: 15px;
     margin: 7px 15px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-radius: var(--radius1);
     background: var(--card-background);
@@ -67,15 +69,17 @@
 .box-quicklink h3{
     flex-basis: 100%;
     text-align: center;
-    margin: 10px 15px;
+    margin: 10px 0 20px 0;
 }
 .quicklink{
-    width: 50%;
+    width: auto;
+    flex-basis: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; 
     font-size: .7em;
+    margin-bottom: 20px;
 }
 .quicklink a{
     max-width: 50px;
@@ -105,7 +109,7 @@
 .box-todo h3{
     flex-basis: 100%;
     text-align: center;
-    margin: 10px 15px;
+    margin: 10px 0 20px 0;
 }
 #todo-form{
     width: 100%;
@@ -148,7 +152,7 @@
 .box-timer h3{
     flex-basis: 100%;
     text-align: center;
-    margin: 10px 15px;
+    margin: 10px 0 20px 0;
 }
 
 
@@ -169,7 +173,7 @@
 .setting-btn{
     position: absolute;
     z-index: 100;
-    top: 0px;
+    bottom: 0px;
     right: 10px;
 }
 .setting-btn:hover{
