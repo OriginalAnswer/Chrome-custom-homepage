@@ -14,8 +14,8 @@ body>
 @import url(./css/root.css);
 /* @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR&family=Quicksand&display=swap"); */
 /* font-family: 'Quicksand','Jua','Nanum Gothic','Noto Sans KR' */
-@import url(./css/elements.css);
 @import url(./css/box.css);
+@import url(./css/elements.css);
 * {
     box-sizing: border-box;
     margin: 0;padding: 0;
