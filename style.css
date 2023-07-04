@@ -11,11 +11,11 @@ body>
 -타이머
 -투두리스트
 */
-@import url(./css/root.css);
+@import url(./style/root.css);
 /* @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR&family=Quicksand&display=swap"); */
 /* font-family: 'Quicksand','Jua','Nanum Gothic','Noto Sans KR' */
-@import url(./css/box.css);
-@import url(./css/elements.css);
+@import url(./style/box.css);
+@import url(./style/elements.css);
 * {
     box-sizing: border-box;
     margin: 0;padding: 0;
