@@ -1,0 +1,12 @@
+#s1,#s2,#s3{
+    width: 100%;
+    padding: 15px 0px;
+}
+#s1{
+   padding: 0 10px; 
+}
+#s3{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}

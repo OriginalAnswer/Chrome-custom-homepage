@@ -12,11 +12,9 @@
 
 .box-search{
     width: 100%;
-    padding: 15px 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 10px; */
 }
 .box-search-form{
     width: 50%;
@@ -26,8 +24,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 10px;
-    padding: 0 15px;
-    margin: 5px 0;
+    margin: 5px 5px;
 }
 .search-bar{
     width: 100%;
@@ -92,8 +89,11 @@
 }
 
 
+/* --------------------------------- */
+
 .box-todo{
     width: 300px;
+    height: 100%;
     padding: 15px;
     margin: 7px 15px;
     display: flex;
@@ -102,9 +102,41 @@
     border-radius: var(--radius1);
     background: var(--card-background);
 }
+.box-todo h3{
+    flex-basis: 100%;
+    text-align: center;
+    margin: 10px 15px;
+}
+#todo-form{
+    width: 100%;
+    /* display: flex;
+    flex-wrap: nowrap;
+    align-items: center; */
+}
+.todo-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-round);
+    background: var(--color-card-input);
+    padding: 10px 20px;
+}
+.box-todo input{
+    border: 0;
+    outline: none;
+    padding: 5px 5px;
+    color: #000;
+    font-size: 1em;
+    width: 100%;
+    background: inherit;
+}
 
+
+
+/* --------------------------------- */
 .box-timer{
     width: 300px;
+    height: 100%;
     padding: 15px;
     margin: 7px 15px;
     display: flex;
@@ -112,6 +144,11 @@
     flex-wrap: wrap;
     border-radius: var(--radius1);
     background: var(--card-background);
+}
+.box-timer h3{
+    flex-basis: 100%;
+    text-align: center;
+    margin: 10px 15px;
 }
 
 

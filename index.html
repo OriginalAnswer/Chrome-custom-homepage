@@ -7,119 +7,137 @@
     <title>Home</title>
 </head>
 <body>
+    <section id="s1">
 
-    <h1>a day is a life.</h1>
-    <div class="box box-today">    <!-- 날짜 -->
-        <p id="today">날짜</p>
-    </div>
-
-    <div class="box box-clock">    <!-- 시계 -->
-        <p id="clock">clock</p>
-    </div>
-
-    <div class="box box-greeting">        <!-- 그리팅 -->
-        <span id="greeting"></span>
-        <!-- <span id="greeting-name">, 이름</span> -->
-    </div>
-
-
-    <div class="box box-search">    <!-- 검색창 -->
-        <form 
-        action="https://www.youtube.com/results"
-        target="_blank"
-        class="box-search-form box-search-form-youtube">
-        <div class="search-bar">
-            <i class="fa-brands fa-youtube"></i>
-            <input type="text" name="q" placeholder="YouTube 검색">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        </form>
-
-        <form 
-        action="https://www.google.co.kr/search?q=" 
-        target="_blank"
-        class="box-search-form box-search-form-google">
-        <div class="search-bar">
-            <i class="fa-brands fa-google"></i>
-            <input type="text" name="q" placeholder="Google 검색">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        </form>
-
-    </div>
-    <!-- 바로가기 아이콘 -->
-    <div class="box-quicklink">
-
-        <h3>바로가기</h3>
-        <div class="quicklink">
-            <a href="https://www.youtube.com/" target="_blank">
-                <img src="./img/icon youtube.png" alt="">
-                <p>YouTube</p>
-            </a>
-        </div>
-        <div class="quicklink">
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="./img/icon instagram.png" alt="">
-                <div class="q-title">Instagram</div>
-            </a>
-        </div>
-        <div class="quicklink">
-            <a href="https://fontawesome.com/" target="_blank">
-                <img src="./img/icon font awesome.png" alt="">
-                <div class="q-title">Font Awesome</div>
-            </a>
-        </div>
-        <div class="quicklink">
-            <a href="https://www.svgrepo.com/" target="_blank">
-                <img src="./img/icon default.png" alt="">
-                <div class="q-title">Svg icon</div>
-            </a>
-        </div>
-        <div class="quicklink">
-            <a href="http://blog.naver.com/" target="_blank">
-                <img src="./img/icon naverblog.png" alt="">
-                <div class="q-title">Naver Blog</div>
-            </a>
-        </div>
-    </div>
         
-    
-    
-    <div class="box-todo">
-        <div>todolist</div>
-
-    </div>
-
-    <div class="box-timer">
-        <div>timer</div>
-    </div>
-
-
-
-
-
-
-    <!-- 세팅창 -->
-    <div class="box-setting" style="display: none;">
-        <div class="box-set-background">
-            <input type="radio" name="" id="">light
-            <input type="radio" name="" id="">dark
-            <input type="radio" name="" id="">color1
-            <input type="radio" name="" id="">color2
+        <h1>a day is a life.</h1>
+        <div class="box box-today">    <!-- 날짜 -->
+            <p id="today">날짜</p>
         </div>
+        
+        <div class="box box-clock">    <!-- 시계 -->
+            <p id="clock">clock</p>
+        </div>
+        
+        <div class="box box-greeting">        <!-- 그리팅 -->
+            <span id="greeting"></span>
+            <!-- <span id="greeting-name">, 이름</span> -->
+        </div>
+    </section>
+        
+    <section id="s2">
+
+        <div class="box box-search">    <!-- 검색창 -->
+            <form 
+            action="https://www.youtube.com/results"
+            target="_blank"
+            class="box-search-form box-search-form-youtube">
+            <div class="search-bar">
+                <i class="fa-brands fa-youtube"></i>
+                <input type="text" name="q" placeholder="YouTube 검색">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            </form>
+            
+            <form 
+            action="https://www.google.co.kr/search?q=" 
+            target="_blank"
+            class="box-search-form box-search-form-google">
+            <div class="search-bar">
+                <i class="fa-brands fa-google"></i>
+                <input type="text" name="q" placeholder="Google 검색">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
     </div>
-    
-    
-    
-    
-    <div class="setting-btn">
-        <i class="fa-solid fa-gear"></i>
-    </div>
-    <!--------------- 자바스크립트 --------------->
-    <script src="./js/const.js"></script>
-    <script src="./js/date.js"></script>
-    <script src="./js/clock.js"></script>
-    <script src="./js/greeting.js"></script>
+    </section>
+
+    <section id="s3">
+
+        <!-- 바로가기 아이콘 -->
+        <div class="box-quicklink">
+            
+            <h3>바로가기</h3>
+            <div class="quicklink">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="./img/icon youtube.png" alt="">
+                    <p>YouTube</p>
+                </a>
+            </div>
+            <div class="quicklink">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./img/icon instagram.png" alt="">
+                    <div class="q-title">Instagram</div>
+                </a>
+            </div>
+            <div class="quicklink">
+                <a href="https://fontawesome.com/search" target="_blank">
+                    <img src="./img/icon font awesome.png" alt="">
+                    <div class="q-title">Font Awesome</div>
+                </a>
+            </div>
+            <div class="quicklink">
+                <a href="https://www.svgrepo.com/" target="_blank">
+                    <img src="./img/icon default.png" alt="">
+                    <div class="q-title">Svg icon</div>
+                </a>
+            </div>
+            <div class="quicklink">
+                <a href="http://blog.naver.com/" target="_blank">
+                    <img src="./img/icon naverblog.png" alt="">
+                    <div class="q-title">Naver Blog</div>
+                </a>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="box-todo">
+            <h3>할 일</h3>
+            <form id="todo-form">
+                <div class="todo-bar">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <input type="text" required>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="todo-show"></div>
+            </form>
+        </div>
+        
+        
+        <div class="box-timer">
+            <h3>timer</h3>
+        </div>
+        
+    </section>
+        
+        
+        
+        
+        
+        
+        <!-- 세팅창 -->
+        <div class="box-setting" style="display: none;">
+            <div class="box-set-background">
+                <input type="radio" name="" id="">light
+                <input type="radio" name="" id="">dark
+                <input type="radio" name="" id="">color1
+                <input type="radio" name="" id="">color2
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="setting-btn">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <!--------------- 자바스크립트 --------------->
+        <script src="./js/const.js"></script>
+        <script src="./js/date.js"></script>
+        <script src="./js/clock.js"></script>
+        <script src="./js/greeting.js"></script>
     <script src="./js/action.js"></script>
     
     <script src="https://kit.fontawesome.com/e4704dcbbd.js" crossorigin="anonymous"></script>
