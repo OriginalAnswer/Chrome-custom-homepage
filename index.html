@@ -58,7 +58,7 @@
     <section id="s3">
 
         <!-- 바로가기 아이콘 -->
-        <div class="box-quicklink">
+        <div class="box box-quicklink">
             
             <h3>바로가기</h3>
             <div class="quicklink">
@@ -81,7 +81,7 @@
             </div>
             <div class="quicklink">
                 <a href="https://www.svgrepo.com/" target="_blank">
-                    <img src="./img/icon default.png" alt="">
+                    <img src="" alt="">
                     <div class="q-title">Svg icon</div>
                 </a>
             </div>
@@ -91,32 +91,38 @@
                     <div class="q-title">Naver Blog</div>
                 </a>
             </div>
+            <div class="quicklink">
+                <a href="https://www.coupang.com/" target="_blank">
+                    <!-- <img src="./img/icon coupang.png" alt=""> -->
+                    <div class="q-title">Coupang</div>
+                </a>
+            </div>
         </div>
         
         
         
         
-        <div class="box-todo">
+        <div class="box box-todo">
             <h3>할 일</h3>
             <form id="todo-form">
                 <div class="todo-bar">
                     <i class="fa-regular fa-pen-to-square"></i>
-                    <input type="text" required>
+                    <input type="text" id="todo-input" required>
                     <i class="fa-solid fa-plus"></i>
                 </div>
-                <div id="todo-show"></div>
+                <div id="todo-show">
+                    <!-- .box-todo-item>span+delBtn -->
+                </div>
             </form>
         </div>
         
+
         
-        <div class="box-timer">
+        <div class="box box-timer">
             <h3>timer</h3>
         </div>
         
     </section>
-        
-        
-        
         
         
         
@@ -141,6 +147,7 @@
         <script src="./js/date.js"></script>
         <script src="./js/clock.js"></script>
         <script src="./js/greeting.js"></script>
+        <script src="./js/todo.js"></script>
     <script src="./js/action.js"></script>
     
     <script src="https://kit.fontawesome.com/e4704dcbbd.js" crossorigin="anonymous"></script>
