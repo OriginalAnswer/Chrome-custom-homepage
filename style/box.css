@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    & .box-search-form{
+    & .search-form{
         width: 47.5%;
         min-width: 300px;
         display: flex;

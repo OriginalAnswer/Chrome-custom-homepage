@@ -9,8 +9,9 @@
 <body>
     <section id="s1">
 
-        
-        <h2>a day is a life.</h2>
+        <div class="box-title">
+            <h2>a day is a life.</h2>
+        </div>
 
         
         <div class="box box-clock">    <!-- 시계 -->
@@ -34,7 +35,7 @@
             <form 
             action="https://www.youtube.com/results"
             target="_blank"
-            class="box-search-form box-search-form-youtube">
+            class="search-form search-form-youtube">
             <div class="search-bar">
                 <i class="fa-brands fa-youtube"></i>
                 <input type="text" name="q" placeholder="YouTube 검색">
@@ -45,18 +46,17 @@
             <form 
             action="https://www.google.co.kr/search?q=" 
             target="_blank"
-            class="box-search-form box-search-form-google">
-            <div class="search-bar">
-                <i class="fa-brands fa-google"></i>
-                <input type="text" name="q" placeholder="Google 검색">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </form>
-    </div>
+            class="search-form search-form-google">
+                <div class="search-bar">
+                    <i class="fa-brands fa-google"></i>
+                    <input type="text" name="q" placeholder="Google 검색">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+        </div>  
     </section>
 
     <section id="s3">
-
         <!-- 바로가기 아이콘 -->
         <div class="box box-quicklink">
             
@@ -98,10 +98,7 @@
                 </a>
             </div>
         </div>
-        
-        
-        
-        
+        <!--  -->
         <div class="box box-todo">
             <h3>할 일</h3>
             <form id="todo-form">

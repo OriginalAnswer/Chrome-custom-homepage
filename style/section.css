@@ -1,6 +1,7 @@
 #s1,#s2,#s3{
     width: 100%;
     padding: 15px 0px;
+    border: 1px dotted #000;
 }
 #s1{
    padding: 0 10px; 
@@ -10,3 +11,34 @@
  flex-wrap: wrap;
  justify-content: space-around;
 }
+
+/* 
+
+#s1>.box-title
+    .box-time
+    .box-today
+    .box-greetng
+
+#s2>.box-search>.box-search-form>.search-bar>input
+                .box-search-form>.search-bar>input
+
+#s3>.box-quicklick?
+    .box-todo>#todo-form>.todo-bar>input
+                        >.todo-show
+    .box-timer
+   
+
+⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️
+.setting-view>#set-s1>.set-s1-1 👉 title
+                      .set-s1-2 👉 time
+                      .set-s1-3 👉 today
+                      .set-s1-4 👉 greetng
+             >#set-s2>.set-s2-1 👉 Y 
+                      .set-s2-2 👉 G
+             >#set-s3>.set-s3-1 👉 quicklink
+                      .set-s3-2 👉 todo list
+                      .set-s3-3 👉 timer
+                      .set-s3-4 👉 task
+             >#set-theme
+             >#set-font
+*/
