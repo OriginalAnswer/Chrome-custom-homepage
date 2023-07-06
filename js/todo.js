@@ -1,7 +1,6 @@
 
 const TODOS_KEY = 'todos';//로컬스토리지에 저장되는 id 이름
 let todosArr = [];//빈 어레이
-const savedTodo = localStorage.getItem(TODOS_KEY);//로컬스토리지에서 데이터(아이템/아이디) 가져오기
 
 
 
@@ -9,10 +8,10 @@ function printTodo(a){
     const dv = document.createElement('div');//div 생성
     dv.id = a.id;//?
     dv.classList.add('box-todo-item');//.todo-list를 가진 div 컨테이너
-
+    
     const span = document.createElement('span');//span 생성
     span.innerText = a.text;//span 안에 a의 택스트 값을 넣음
-
+    
     const delBtn = document.createElement('i');//아이콘생성
     delBtn.classList.add('fas', 'fa-times');//x아이콘생성
     
@@ -43,12 +42,12 @@ function addTodo(e) {
     e.preventDefault();//submit 시 새로고침 정지
     const newtodo = todoInput.value;//submit 누른 인풋 값
     todoInput.value = "";//
-
+    
     const newtodoObj = {
         text:newtodo,//submit 누른 인풋 값
         id:Date.now(),
     }
-
+    
     todosArr.push(newtodoObj);//어레이에 넣기
     
     printTodo(newtodoObj);
@@ -58,11 +57,12 @@ function addTodo(e) {
 todoForm.addEventListener('submit', addTodo);
 
 
+const savedTodo = localStorage.getItem(TODOS_KEY);//로컬스토리지에서 데이터(아이템/아이디) 가져오기
 if (savedTodo !== null) { //비어있지 않으면 아래 동작하기
     const parsedTodos = JSON.parse(savedTodo);//객체 분석하기
     todos = parsedTodos;//"savedTodo"저장된 객체 가져오기
     //"parsed" 뜻 : 분석된
     parsedTodos.forEach(printTodo);//각 아이템을 printTodo에 넣어서 동작시켜라
     todosArr = todos;
-// ^^^^새로고침후 submit 시 덮어씌워지던 거 해결!
+    // ^^^^새로고침후 submit 시 덮어씌워지던 거 해결!
 }

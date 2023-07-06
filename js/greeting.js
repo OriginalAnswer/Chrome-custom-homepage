@@ -16,3 +16,21 @@ function changeGreeting(){
         greeting.innerText = 'Good Night';
     }
 }
+
+// ---------------------------------------
+
+const GREETING_NAME_KEY = "greeting name"
+const savedName = localStorage.getItem(GREETING_NAME_KEY);
+function printName(){
+    greetingShow.innerText = savedName;
+}
+function addName(e) {
+    // e.preventDefault();
+    const name = greetingInput.value;
+    localStorage.setItem(GREETING_NAME_KEY, name);
+    printName();
+}
+greetingForm.addEventListener('submit', addName);
+if (savedName !== null) {
+    printName();
+};
