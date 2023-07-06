@@ -253,7 +253,7 @@
     background: hsla(0, 0%, 100%, 0.243);
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px) saturate(180%);
     border-left: 1px solid #ffffff90;
     & .set-ul{
         width: 100%;
