@@ -29,7 +29,9 @@
 #s3{
  display: flex;
  flex-wrap: wrap;
- justify-content: space-around;
+ justify-content: center;
+ width: 100%;
+ padding-top: 0;
 }
 /* -----------------------------> 설정화면
 #s0>.s0-bg
