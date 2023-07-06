@@ -24,6 +24,8 @@ body>
     font-family: "Jua", "Nanum Gothic", "Noto Sans KR", sans-serif;
     color: #000;
 }
+input, select, textarea, button, a, label {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
 
 html,
 body {
@@ -36,7 +38,7 @@ body {
     /* animation: change 6s ease-in-out infinite; */
     /* background-position: 100% 500%;
     background-size: 400% 200%; */
-    /* padding: 15px; */
+    padding: 30px 10%;
   }
   /* ----------------------- */
   .dpnone{display: none;}

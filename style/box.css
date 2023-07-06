@@ -83,7 +83,7 @@
     }
     & .quicklink{
         width: auto;
-        flex-basis: 30%;
+        /* flex-basis: 30%; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -254,10 +254,10 @@
     background: hsla(0, 0%, 100%, 0.243);
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
-    backdrop-filter: blur(4px) saturate(180%);
-    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    backdrop-filter: blur(4px) ;
+    -webkit-backdrop-filter: blur(4px) ;
     /* backdrop-filter는 모바일에서 안되네 "웹킷(webkit)을 추가해준다" */
-    border-left: 1px solid #ffffff90;
+    border-left: 1px solid #ffffff12;
     & .set-ul{
         width: 100%;
         padding: 10px;

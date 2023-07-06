@@ -16,15 +16,15 @@
 
 ----------------------------- */
 #s0,#s1,#s2,#s3,#s0-box{
-    border: 1px dotted #000;
+    /* border: 1px dotted #000; */
 }
 #s1,#s2,#s3{
     width: 100%;
     padding: 15px 0px;
 }
 #s1{
-    margin-top: 20px;
-   padding: 0 10px; 
+    margin: 20px 0;
+    padding: 0 10px; 
 }
 #s3{
  display: flex;
