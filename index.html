@@ -19,8 +19,7 @@
             <p id="today">날짜</p>
         </div>
         <div class="box box-greeting">        <!-- 그리팅 -->
-            <span id="greeting"></span>
-            <span id="greeting-name"></span>
+            <span id="greeting"></span><span id="greeting-name"></span>
         </div>
     </section>
         
@@ -139,7 +138,10 @@
                 <div class="set-ul-title">general</div>
                 <form class="set-card" id="greeting-form">
                     <label for="greeting-input">Greeting</label>
-                    <input id="greeting-input" type="text" placeholder="Name">
+                    <input 
+                    id="greeting-input" 
+                    type="text" placeholder="Name" 
+                    oninput="syncGreeting()">
                 </form>
             </ul>
     </nav>
