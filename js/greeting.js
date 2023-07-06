@@ -13,6 +13,6 @@ function changeGreeting(){
     } else if(h<21){
         greeting.innerText = 'Good Evening';
     }else{
-        greeting.innerText = 'Good Night🌙';
+        greeting.innerText = 'Good Night';
     }
 }
