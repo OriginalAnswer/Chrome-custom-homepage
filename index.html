@@ -125,28 +125,56 @@
         
         
         
-        <!-- 세팅창 -->
-        <div class="box-setting" style="display: none;">
-            <div class="box-set-background">
-                <input type="radio" name="" id="">light
-                <input type="radio" name="" id="">dark
-                <input type="radio" name="" id="">color1
-                <input type="radio" name="" id="">color2
-            </div>
+    <!-- 세팅창 -->
+       
+    <input type="checkbox" id="setdoor" class="dpnone">
+    <label for="setdoor" id="set-door">
+        <i class="fa-solid fa-gear set-door-icon"></i>
+    </label>
+    <section id="s0">
+        <label for="setdoor" id="s0-bg"></label>
+        <div id="s0-box">
+            <ul id="s0-general" class="set-box">
+                <div class="set-box-title">general</div>
+                <form
+                id="form-set-greeting" 
+                class="set-box-innerbox"
+                action="">
+                    <label for="set-greeting-input">Greeting</label>
+                    <input
+                    id="set-greeting-input" 
+                    type="text" placeholder="Name">
+                </form>
+            </ul>
+
+            <ul id="s0-s1" class="set-box">
+                <div class="set-box-title">...</div>
+                <div id="s0-s1-1" class="s0-s1">title</div>
+                <div id="s0-s1-2" class="s0-s1">time</div>
+                <div id="s0-s1-3" class="s0-s1">date</div>
+            </ul>
+            <ul id="s0-s2" class="set-box">
+                <div class="set-box-title">quick links</div>
+                <div id="s0-s2-1"></div>
+                <div id="s0-s2-2"></div>
+            </ul>
+            <ul id="s0-s3" class="set-box">
+                <div class="set-box-title">...</div>
+                <div id="s0-s3-1"></div>
+                <div id="s0-s3-2"></div>
+                <div id="s0-s3-3"></div>
+            </ul>
         </div>
+    </section>
+         
         
-        
-        
-        
-        <div class="setting-btn">
-            <i class="fa-solid fa-gear"></i>
-        </div>
-        <!--------------- 자바스크립트 --------------->
-        <script src="./js/const.js"></script>
-        <script src="./js/date.js"></script>
-        <script src="./js/clock.js"></script>
-        <script src="./js/greeting.js"></script>
-        <script src="./js/todo.js"></script>
+     
+    <!--------------- 자바스크립트 --------------->
+    <script src="./js/const.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/todo.js"></script>
     <script src="./js/action.js"></script>
     
     <script src="https://kit.fontawesome.com/e4704dcbbd.js" crossorigin="anonymous"></script>

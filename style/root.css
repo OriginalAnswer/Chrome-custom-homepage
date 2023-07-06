@@ -1,7 +1,10 @@
 :root{
+    --color-theme:#fff;
     --search-background: #f6f6f6;
     --card-background: #f6f6f6;
     --radius1: 30px;
+    --radius2: 10px;
     --radius-round: 50px;
     --color-card-input:#ffffff;
+    --color-s0-bg:#00000096;
 }

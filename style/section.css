@@ -1,18 +1,4 @@
-#s1,#s2,#s3{
-    width: 100%;
-    padding: 15px 0px;
-    border: 1px dotted #000;
-}
-#s1{
-   padding: 0 10px; 
-}
-#s3{
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
-}
-
-/* 
+/* -----------------------------
 
 #s1>.box-title
     .box-time
@@ -26,19 +12,44 @@
     .box-todo>#todo-form>.todo-bar>input
                         >.todo-show
     .box-timer
-   
+#s0
 
-⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️
-.setting-view>#set-s1>.set-s1-1 👉 title
-                      .set-s1-2 👉 time
-                      .set-s1-3 👉 today
-                      .set-s1-4 👉 greetng
-             >#set-s2>.set-s2-1 👉 Y 
-                      .set-s2-2 👉 G
-             >#set-s3>.set-s3-1 👉 quicklink
-                      .set-s3-2 👉 todo list
-                      .set-s3-3 👉 timer
-                      .set-s3-4 👉 task
-             >#set-theme
-             >#set-font
+----------------------------- */
+#s0,#s1,#s2,#s3,#s0-box{
+    border: 1px dotted #000;
+}
+#s1,#s2,#s3{
+    width: 100%;
+    padding: 15px 0px;
+}
+#s1{
+   padding: 0 10px; 
+}
+#s3{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+/* -----------------------------> 설정화면
+#s0>.s0-bg
+   >.s0-box>.set-boxs#s0-s1>#s0-s1-1 👉 title
+                            #s0-s1-2 👉 time
+                            #s0-s1-3 👉 today
+                            #s0-s1-4 👉 greetng
+            .set-boxs#s0-s2>#s0-s2-1 👉 youtube
+                            #s0-s2-2 👉 google
+            .set-boxs#s0-s3>#s0-s1-1 👉 quicklink
+                            #s0-s1-2 👉 todo list
+                            #s0-s1-3 👉 timer
+            
+#set-door>i
 */
+#s0{
+    /* z-index: -100; */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
