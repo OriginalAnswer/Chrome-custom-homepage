@@ -18,15 +18,9 @@ body>
 @import url(./style/section.css);
 @import url(./style/box.css);
 * {
-    box-sizing: border-box;
-    margin: 0;padding: 0;
-    text-decoration: none;
     font-family: "Jua", "Nanum Gothic", "Noto Sans KR", sans-serif;
     color: #000;
 }
-input, select, textarea, button, a, label {-webkit-tap-highlight-color:rgba(0,0,0,0);}
-
-
 html,
 body {
     position: relative;

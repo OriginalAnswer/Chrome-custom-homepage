@@ -155,10 +155,10 @@
                 background: inherit;
             }
             & .fa-plus{
-                color: #adadad;
+                /* color: #adadad; */
                 cursor: pointer;
             }
-            & input:valid ~ .fa-plus{
+            & input:valid ~ button .fa-plus{
                 color: #000;
             }
         }
@@ -294,6 +294,7 @@
         padding: 10px;
         & .set-ul-title{
             text-transform: uppercase;
+            font-size: .8em;
             padding: 5px 10px;
         }
         & .set-card{
@@ -321,8 +322,6 @@
         }
     }
 }
-#greeting-form{
-}
 #quicklink-form{
     gap: 5px;
     & div{
@@ -337,18 +336,6 @@
     & button{
         flex-basis: 50px;
         padding: 5px;
-        &:hover{
-            transform: scale(1.2);
-            & i {
-                color: #000000;
-            }
-        }
-        &:active{
-            transform: scale(.9)
-        }
-        & i {
-            color: #808080;
-        }
     }
 }
 #quicklink-type-select{

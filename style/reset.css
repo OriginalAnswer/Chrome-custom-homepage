@@ -7,4 +7,24 @@ button{
     border: 0;
     outline: none;
     background: none;
+    font-size: 1em;
+    &:hover{
+        transform: scale(1.1);
+        & i {
+            color: #000000;
+        }
+    }
+    &:active{
+        transform: scale(.9)
+    }
+    & i {
+        color: #adadad;
+    }    
 }
+
+ul, ol, li {list-style: none;}
+input, select, textarea, button, a, label {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+* {
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; 
+    margin: 0;padding: 0;
+    text-decoration: none;}

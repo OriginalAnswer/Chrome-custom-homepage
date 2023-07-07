@@ -104,11 +104,11 @@
             <h3>할 일</h3>
             <form id="todo-form">
                 <div class="todo-bar">
-                    <i class="fa-regular fa-pen-to-square"></i>
+                    <label for="todo-input"><i class="fa-regular fa-pen-to-square"></i></label>
                     <input type="text" id="todo-input" required>
-                    <i class="fa-solid fa-plus"></i>
-                    <label for=""></label>
-                    <button type="submit" style="display: none;"></button>
+                    <!-- <label for="todo-submit"><i class="fa-solid fa-plus"></i></label>
+                    <button type="submit" id="todo-submit" style="display: none;"></button> -->
+                    <button type="submit"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div id="todo-show">
                     <!-- .box-todo-item>span+delBtn -->
@@ -150,7 +150,7 @@
                 </form>
             </div>
         </ul>
-        <ul class="set-ul">
+        <ul class="set-ul set-ul-quicklink">
             <div class="set-ul-title">Quick Links</div>
             <div class="set-card">
 
@@ -169,7 +169,7 @@
                 </form>
 
                 <div class="divide"></div>
-
+                
                 <form id="quicklink-type" class="quicklink-type">
                     <label for="quicklink-type-select">Style</label>
                     <select name="" id="quicklink-type-select">
@@ -177,6 +177,12 @@
                         <option value="box">box</option>
                     </select>
                 </form>
+
+            </div>
+        </ul>
+        <ul class="set-ul set-ul-timer">
+            <div class="set-ul-title">timer</div>
+            <div class="set-card">
             </div>
         </ul>
     </nav>
