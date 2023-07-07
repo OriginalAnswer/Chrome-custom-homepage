@@ -126,27 +126,63 @@
         
         
         
-    <!-- 세팅창 -->
-       
+    <!-- ↓↓↓↓↓↓↓ 설정 ↓↓↓↓↓↓↓-->
+    
+    <!-- open & close -->
     <input type="checkbox" id="setdoor" class="dpnone">
     <label id="set-door" for="setdoor" >
         <i class="fa-solid fa-gear set-door-icon"></i>
     </label>
+    <!-- setbox 바깥 클릭시 close 되도록 -->
     <label id="setbox-back"for="setdoor" ></label>
+    <!-- setbox -->
     <nav id="setbox">
-            <ul class="set-ul">
-                <div class="set-ul-title">general</div>
-                <form class="set-card" id="greeting-form">
+        <ul class="set-ul">
+            <div class="set-ul-title">general</div>
+            <div class="set-card">
+
+                <form id="greeting-form">
                     <label for="greeting-input">Greeting</label>
                     <input 
                     id="greeting-input" 
                     type="text" placeholder="Name" 
                     oninput="syncGreeting()">
                 </form>
-            </ul>
+            </div>
+        </ul>
+        <ul class="set-ul">
+            <div class="set-ul-title">Quick Links</div>
+            <div class="set-card">
+
+                <form id="quicklink-form">
+                    <div>
+                        <input 
+                        id="quicklink-input-title" 
+                        type="text" placeholder="Name" 
+                        required>
+                        <input 
+                        id="quicklink-input-url" 
+                        type="url" placeholder="URL" 
+                        required>
+                    </div>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                </form>
+
+                <div class="divide"></div>
+
+                <form id="quicklink-type" class="quicklink-type">
+                    <label for="quicklink-type-select">Style</label>
+                    <select name="" id="quicklink-type-select">
+                        <option value="list">list</option>
+                        <option value="box">box</option>
+                    </select>
+                </form>
+            </div>
+        </ul>
     </nav>
-         
-        
+    
+    <!-- ↑↑↑↑↑↑↑ 설정 ↑↑↑↑↑↑↑ -->
+    
      
     <!--------------- 자바스크립트 --------------->
     <script src="./js/const.js"></script>

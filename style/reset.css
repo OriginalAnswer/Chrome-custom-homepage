@@ -1,4 +1,10 @@
-input{
+input, select{
     border: 0;
     outline: none;
+    width: 50%;
+}
+button{
+    border: 0;
+    outline: none;
+    background: none;
 }

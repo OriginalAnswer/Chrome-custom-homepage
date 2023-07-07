@@ -5,9 +5,9 @@ function changeGreeting(){
     if(h<4){
         greeting.innerText = 'Good Night';
     }else if(h<7){
-        greeting.innerText = 'Good Dream🌠';
+        greeting.innerText = 'Good Dream';
     }else if(h < 12){
-        greeting.innerText = 'Good Morning😊';
+        greeting.innerText = 'Good Morning';
     } else if (h < 18) {
         greeting.innerText = 'Good Afternoon';
     } else if(h<21){
