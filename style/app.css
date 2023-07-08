@@ -94,8 +94,11 @@
     }
 }
 
-.app-todo i{}
-.app-task{}
+.app-task{
+    & input[type=checkbox]:checked + span{
+        text-decoration: line-through;
+    }
+}
 /* --------------------------------- */
 
 
