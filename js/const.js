@@ -5,6 +5,9 @@ const greetingShow = document.querySelector('#greeting-name');
 const greetingInput = document.querySelector('#greeting-input');
 const greetingForm = document.querySelector('#greeting-form');
 
+const headerText = document.querySelector('#header-text');
+const headerTextInput = document.querySelector('#header-text-input');
+const headerTextForm = document.querySelector('#header-text-form');
 
 const todoForm = document.querySelector('#todo-form');
 const todoShow = document.querySelector('#todo-show');

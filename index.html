@@ -7,33 +7,33 @@
     <title>Home</title>
 </head>
 <body>
-    <section id="s1">
+    <header id="s1">
 
-        <div class="box-title">
-            <span>a day is a life. </span>
+        <div class="header-text">
+            <span id="header-text">a day is a life. </span>
         </div>
-        <div class="box box-clock">    <!-- 시계 -->
+        <div class="header-clock">    <!-- 시계 -->
             <p id="clock">clock</p>
         </div>
-        <div class="box box-today">    <!-- 날짜 -->
+        <div class="header-today">    <!-- 날짜 -->
             <p id="today">날짜</p>
         </div>
-        <div class="box box-greeting">        <!-- 그리팅 -->
+        <div class="header-greeting">        <!-- 그리팅 -->
             <span id="greeting"></span><span id="greeting-name"></span>
         </div>
-    </section>
+    </header>
         
 
     <section id="s2">
 
-        <div class="box box-search">    <!-- 검색창 -->
+        <div class="box app-search">    <!-- 검색창 -->
             <form 
             action="https://www.youtube.com/results"
             target="_blank"
             class="search-form search-form-youtube">
             <div class="search-bar">
-                <i class="fa-brands fa-youtube"></i>
-                <input type="text" name="q" placeholder="YouTube 검색">
+                <i class="fa-brands fa-youtube search-site-icon"></i>
+                <input class="search-input" type="text" name="q" placeholder="YouTube 검색">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             </form>
@@ -43,8 +43,18 @@
             target="_blank"
             class="search-form search-form-google">
                 <div class="search-bar">
-                    <i class="fa-brands fa-google"></i>
-                    <input type="text" name="q" placeholder="Google 검색">
+                    <i class="fa-brands fa-google search-site-icon"></i>
+                    <input class="search-input" type="text" name="q" placeholder="Google 검색">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+            <form 
+            action="https://music.youtube.com/search?q=" 
+            target="_blank"
+            class="search-form search-form-google">
+                <div class="search-bar">
+                    <i class="fa-solid fa-headphones search-site-icon"></i>
+                    <input class="search-input" type="text" name="q" placeholder="YouTube Music 검색">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </form>
@@ -53,8 +63,7 @@
 
     <section id="s3">
         <!-- 바로가기 아이콘 -->
-        <div class="box box-quicklink">
-            
+        <div class="app app-quicklink">
             <h3>바로가기</h3>
             <div class="quicklink">
                 <a href="https://www.youtube.com/" target="_blank">
@@ -100,14 +109,12 @@
             </div>
         </div>
         <!--  -->
-        <div class="box box-todo">
+        <div class="app app-todo">
             <h3>할 일</h3>
             <form id="todo-form">
                 <div class="todo-bar">
                     <label for="todo-input"><i class="fa-regular fa-pen-to-square"></i></label>
                     <input type="text" id="todo-input" required>
-                    <!-- <label for="todo-submit"><i class="fa-solid fa-plus"></i></label>
-                    <button type="submit" id="todo-submit" style="display: none;"></button> -->
                     <button type="submit"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div id="todo-show">
@@ -118,8 +125,10 @@
         
 
         
-        <div class="box box-timer">
-            <h3>timer</h3>
+        <div class="app box-task">
+            <h3>Daily Tasks</h3>
+            <form action=""></form>
+            <div class="task-show"></div>
         </div>
         
     </section>
@@ -135,12 +144,20 @@
     </label>
     <!-- setbox 바깥 클릭시 close 되도록 -->
     <label id="setbox-back"for="setdoor" ></label>
+
+
     <!-- setbox -->
     <nav id="setbox">
         <ul class="set-ul">
             <div class="set-ul-title">general</div>
             <div class="set-card">
-
+                <form id="header-text-form">
+                    <label for="header-text-input">Text</label>
+                    <input 
+                    id="header-text-input" 
+                    type="text" placeholder="Text"
+                    oninput="syncHeaderText()">
+                </form>
                 <form id="greeting-form">
                     <label for="greeting-input">Greeting</label>
                     <input 
@@ -153,7 +170,6 @@
         <ul class="set-ul set-ul-quicklink">
             <div class="set-ul-title">Quick Links</div>
             <div class="set-card">
-
                 <form id="quicklink-form">
                     <div>
                         <input 
@@ -192,8 +208,9 @@
      
     <!--------------- 자바스크립트 --------------->
     <script src="./js/const.js"></script>
-    <script src="./js/date.js"></script>
+    <script src="./js/headerText.js"></script>
     <script src="./js/clock.js"></script>
+    <script src="./js/date.js"></script>
     <script src="./js/greeting.js"></script>
     <script src="./js/todo.js"></script>
     <script src="./js/start-action.js"></script>

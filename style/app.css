@@ -1,26 +1,20 @@
-#s1,.box{text-align: center;}
-.divide{
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #000000;
-    transform: scaleY(.5);
-    opacity: .2;
-    margin: 5px 0;
+.header-text{
+
 }
-.box-today,
-.box-clock,
-.box-greeting{
+/* .header-today,
+.header-clock,
+.header-greeting{
     font-size: .9em;
 }
-.box-clock{
+*/
+.header-clock{
     font-size: 3em;
     margin: 10px 0;
-}
+} 
 
 
 /* --------------------------------- */
-.box-search{
+.app-search{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -28,12 +22,10 @@
     gap: 10px;
     & .search-form{
         width: 100%;
-        /* min-width: 300px; */
         max-width: 400px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        margin: 5px 15px;
     }
     & .search-bar{
         width: 100%;
@@ -55,7 +47,7 @@
         & input::placeholder{
             color: #adadad;
         }
-        & i{
+        & .search-site-icon{
             color: #adadad;
         }
         & .fa-youtube{
@@ -66,24 +58,12 @@
 
 
 /* --------------------------------- */
-#s3 .box{
-    /* width: 100%; */
-    /* max-width: 350px; */
-    padding: 15px;
-    margin: 10px;
-}
 
-.box-quicklink{
-    margin: 7px 0;
-    height: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-wrap: wrap;
+
+.app-quicklink{
     align-items: flex-start;
     justify-content: space-around;
     gap:5px;
-    border-radius: var(--radius1);
-    background: var(--card-background);
     & h3{
         flex-basis: 100%;
         text-align: center;
@@ -122,20 +102,7 @@
     }
 }
 
-.box-todo{
-    width: 300px;
-    height: 100%;
-    margin: 7px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: var(--radius1);
-    background: var(--card-background);
-    & h3{
-        flex-basis: 100%;
-        text-align: center;
-        margin: 10px 0 20px 0;
-    }
+.app-todo{
     & #todo-form{
         width: 100%;
         & .todo-bar{
@@ -198,130 +165,11 @@
 }
 
 
-
-
-
-/* --------------------------------- */
-.box-timer{
-    width: 300px;
-    height: 100%;
-    padding: 15px;
-    margin: 7px 15px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: var(--radius1);
-    background: var(--card-background);
-    & h3{
-        flex-basis: 100%;
-        text-align: center;
-        margin: 10px 0 20px 0;
-    }
-}
 /* --------------------------------- */
 
 
 
 
-/* -----------------------------> 설정화면
-#s0>.s0-bg
-   >.s0-box>.set-boxs#s0-s1>#s0-s1-1 👉 title
-                            #s0-s1-2 👉 time
-                            #s0-s1-3 👉 today
-                            #s0-s1-4 👉 greetng
-            .set-boxs#s0-s2>#s0-s2-1 👉 youtube
-                            #s0-s2-2 👉 google
-            .set-boxs#s0-s3>#s0-s1-1 👉 quicklink
-                            #s0-s1-2 👉 todo list
-                            #s0-s1-3 👉 timer
-            
-#set-door>i
-*/
-#set-door{
-    position: fixed;
-    z-index: 999;
-    bottom: 20px;
-    right: 20px;
-    & .set-door-icon{
-        font-size: 1.5em;  
-    }
-}
-/* set icon 모션 */
-.set-door-icon{
-    transition: transform 0.5s ease-in-out; 
-}
-#setdoor:checked ~ #set-door>i{
-    transform: rotate(90deg);
-}
-#setdoor:checked ~ #setbox{
-    transform: translateX(0);
-}
-/* :checked 하려면 형제태그는 무조건 아래 위치해야함 */
-/* set 여닫는 모션 */
-#setbox-back{
-    display: block;
-    width: 100dvw;
-    height: 100dvh;
-    background: #000;
-    opacity: 0;
-    position: fixed;
-    top: 0;left: 0;
-    transform: translateX(100%);
-}
-
-
-#setdoor:checked ~ #setbox,
-#setdoor:checked ~ #setbox-back{
-    transform: translateX(0);
-}
-/* 설정창 */
-#setbox{
-    z-index: 100;
-    width: 350px;
-    height: 100dvh;
-    padding: 25px 15px;
-    position: fixed;
-    top: 0;right: 0;
-    background: hsla(0, 0%, 89%, 0.243);
-    transform: translateX(100%);
-    transition: transform .5s ease-in-out;
-    backdrop-filter: blur(4px) ;
-    -webkit-backdrop-filter: blur(4px) ;
-    /* backdrop-filter는 모바일에서 안되네 "웹킷(webkit)을 추가해준다" */
-    border-left: 1px solid #ffffff12;
-    & .set-ul{
-        width: 100%;
-        padding: 10px;
-        & .set-ul-title{
-            text-transform: uppercase;
-            font-size: .8em;
-            padding: 5px 10px;
-        }
-        & .set-card{
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: var(--set-card-background);
-            border-radius: var(--radius2);
-            backdrop-filter: blur(4px) ;
-            -webkit-backdrop-filter: blur(4px) ;
-            & input[type=text],input[type=url],select{
-                border-radius: var(--radius2);
-                padding: 8px;
-                background: #ffffffb1;
-                backdrop-filter: blur(1px) ;
-                -webkit-backdrop-filter: blur(1px) ;
-            }
-            & form{
-                width: 100%;    
-                display: flex;
-                flex-wrap: nowrap;
-                align-items: center;
-                justify-content: space-between;
-            }
-        }
-    }
-}
 #quicklink-form{
     gap: 5px;
     & div{

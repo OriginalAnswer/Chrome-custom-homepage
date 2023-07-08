@@ -1,26 +1,10 @@
-/* 
-최상위
-body>
--배경 그라데이션 에니메이션
--날짜
--시계
--그리팅
--날씨
--검색창
--바로가기
--타이머
--투두리스트
-*/
-@import url(./style/reset.css);
 @import url(./style/root.css);
+@import url(./style/reset.css);
+@import url(./style/default.css);
+@import url(./style/section.css);
+@import url(./style/app.css);
 /* @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR&family=Quicksand&display=swap"); */
 /* font-family: 'Quicksand','Jua','Nanum Gothic','Noto Sans KR' */
-@import url(./style/section.css);
-@import url(./style/box.css);
-* {
-    font-family: "Jua", "Nanum Gothic", "Noto Sans KR", sans-serif;
-    color: #000;
-}
 html,
 body {
     position: relative;
@@ -31,5 +15,3 @@ body {
 body{
     padding: 30px;
 }
-  /* ----------------------- */
-  .dpnone{display: none;}
