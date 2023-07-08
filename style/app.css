@@ -13,8 +13,8 @@
     justify-content: center;
     gap: 10px;
     & .search-form{
+        max-width: 400px;
         width: 100%;
-        max-width: 350px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
