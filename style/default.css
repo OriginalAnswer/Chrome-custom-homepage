@@ -2,7 +2,10 @@
     font-family: sans-serif;
     color: #000;
 }
-input, select{width: 50%;}
+input, select{
+    font-size: 1em;
+    width: 50%;
+}
 button{
     font-size: 1em;
     &:hover{
@@ -58,10 +61,10 @@ button{
         align-items: center;
         border-radius: var(--radius-round);
         background: var(--color-card-input);
-        padding: 10px 20px;
+        padding: 15px 20px;
         margin-bottom: 10px;
         & input{
-            margin: 5px;
+            /* margin: 0 5px; */
             padding: 0px 5px;
             color: #000;
             /* font-size: 1em; */
