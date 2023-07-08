@@ -1,11 +1,12 @@
 :root{
     --color-theme:#fff;
     --search-background: #f6f6f6;
-    --card-background: #f6f6f6;
+    --app-background: #f6f6f6;
     --set-card-background: #f1f1f196;
     --radius-app: 30px;
     --radius2: 10px;
     --radius-round: 50px;
     --color-card-input:#ffffff;
     --color-s0-bg:#00000096;
+    --color-task-item-checked: #8d8d8d;
 }

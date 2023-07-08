@@ -42,7 +42,7 @@ button{
     align-items: center;
     flex-wrap: wrap;
     border-radius: var(--radius-app);
-    background: var(--card-background);
+    background: var(--app-background);
     & h3{
         flex-basis: 100%;
         text-align: center;
