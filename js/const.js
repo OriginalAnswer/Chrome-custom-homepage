@@ -10,5 +10,9 @@ const headerTextInput = document.querySelector('#header-text-input');
 const headerTextForm = document.querySelector('#header-text-form');
 
 const todoForm = document.querySelector('#todo-form');
-const todoShow = document.querySelector('#todo-show');
 const todoInput = document.querySelector('#todo-input');
+const todoShow = document.querySelector('#todo-show');
+
+const taskForm = document.querySelector('#task-form');
+const taskInput = document.querySelector('#task-input');
+const taskShow = document.querySelector('#task-show');

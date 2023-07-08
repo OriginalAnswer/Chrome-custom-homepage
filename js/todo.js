@@ -3,34 +3,41 @@ const TODOS_KEY = 'todos';//로컬스토리지에 저장되는 id 이름
 let todosArr = [];//빈 어레이
 
 
-
-function printTodo(a){
-    const dv = document.createElement('div');//div 생성
-    dv.id = a.id;//?
-    dv.classList.add('box-todo-item');//.todo-list를 가진 div 컨테이너
-    
-    const span = document.createElement('span');//span 생성
-    span.innerText = a.text;//span 안에 a의 택스트 값을 넣음
-    
-    const delBtn = document.createElement('i');//아이콘생성
-    delBtn.classList.add('fas', 'fa-times');//x아이콘생성
-    
-    delBtn.addEventListener("click", deleteTodo);//누를시 deleteTodo 작동
-    dv.appendChild(span);
-    dv.appendChild(delBtn);
-    todoShow.appendChild(dv);
-    // #box-todo-item>span+delBtn = dv
-    //   >>> #todo-show 안에 위의 dv를 넣는다.
-    // a는 
-}
-
-
 function deleteTodo(e){
     const dv = e.target.parentElement;//e(눌린) 버튼의 어미 노드
     dv.remove();//노드삭제
     todosArr = todosArr.filter(a => a.id !== parseInt(dv.id));
     saveTodo();
 }
+
+function printTodo(a){
+    const dv = document.createElement('div');//div 생성
+    dv.id = a.id;
+    dv.classList.add('task-item');//.task-item를 가진 div 컨테이너
+    
+    const span = document.createElement('span');//span 생성
+    span.innerText = a.text;//span 안에 a의 택스트 값을 넣음
+    
+    const delBtn = document.createElement('i');//아이콘생성
+    delBtn.classList.add('fas', 'fa-times', 'icon-del');//x아이콘생성
+    delBtn.addEventListener("click", deleteTodo);//누를시 deleteTodo 작동
+    
+    dv.appendChild(span);
+    dv.appendChild(delBtn);
+
+    // dv.innerHTML = `
+    // <span>${a.text}</span>
+    // <button>
+    //     <i class="fas fa-times" onclick="deleteTodo()"></i>
+    // </button>
+    // `;
+    todoShow.appendChild(dv);
+    // #todo-item>span+delBtn = dv
+    //   >>> #todo-show 안에 위의 dv를 넣는다.
+    // a는 
+}
+
+
 
 function saveTodo(){
     localStorage.setItem(TODOS_KEY, JSON.stringify(todosArr));

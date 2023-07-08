@@ -18,12 +18,24 @@ button{
         color: #adadad;
     }    
 }
+.icon-del{
+    &:hover{
+        transform: scale(1.1);
+        & i {
+            color: #000000;
+        }
+    }
+    &:active{
+        transform: scale(.9)
+    }
+}
 
 .app{
     width: 100%;
     max-width: 350px;
     /* min-width: 300px; */
     height: 100%;
+    font-size: .95em;
     margin: 10px;
     padding: 15px;
     display: flex;
@@ -126,6 +138,67 @@ button{
                 &:not(:last-child){
                     margin-bottom: 5px;
                 }
+            }
+        }
+    }
+}
+
+.task-form{
+    width: 100%;
+    & .task-bar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: var(--radius-round);
+        background: var(--color-card-input);
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        & input{
+            margin-left: 5px;
+            padding: 5px 5px;
+            color: #000;
+            /* font-size: 1em; */
+            width: 100%;
+            background: inherit;
+        }
+        & .fa-plus{
+            /* color: #adadad; */
+            cursor: pointer;
+        }
+        & input:valid ~ button .fa-plus{
+            color: #000;
+        }
+    }
+    & .task-show{
+        width: 100%;height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        & .task-item{
+            padding: 15px 20px 15px 20px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            width: 100%;
+            height: auto;
+            display: block;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: var(--radius-round);
+            background: var(--color-card-input);
+            & i{
+                cursor: pointer;
+                color: #adadad;
+                &:hover{color: #000;}
+            }
+            & span{
+                width: 100%;
+                padding: 0 10px;
+                /* word-wrap: break-word; */
+            }
+            & input[type=checkbox]{
+                width: auto;
             }
         }
     }

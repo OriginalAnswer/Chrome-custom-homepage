@@ -63,7 +63,6 @@
     </section>
 
     <section id="s3">
-        <!-- 바로가기 아이콘 -->
         <div class="app app-quicklink">
             <h3>바로가기</h3>
             <div class="quicklink">
@@ -98,7 +97,7 @@
             </div>
             <div class="quicklink">
                 <a href="https://www.coupang.com/" target="_blank">
-                    <img src="./img/icon coupang.png" alt="">
+                    <img src="#" alt="">
                     <div class="q-title">Coupang</div>
                 </a>
             </div>
@@ -109,29 +108,36 @@
                 </a>
             </div>
         </div>
-        <!--  -->
+
+
         <div class="app app-todo">
             <h3>할 일</h3>
-            <form id="todo-form">
-                <div class="todo-bar">
+            <form id="todo-form" class="task-form">
+                <div class="task-bar">
                     <label for="todo-input"><i class="fa-regular fa-pen-to-square"></i></label>
                     <input type="text" id="todo-input" required>
                     <button type="submit"><i class="fa-solid fa-plus"></i></button>
                 </div>
-                <div id="todo-show">
-                    <!-- .box-todo-item>span+delBtn -->
+                <div id="todo-show" class="task-show">
+                    <!-- .todo-item>span+delBtn -->
                 </div>
             </form>
         </div>
         
-
         
-        <div class="app box-task">
+        
+        <div class="app app-task">
             <h3>Daily Tasks</h3>
-            <form action=""></form>
-            <div class="task-show"></div>
-        </div>
-        
+            <form id="task-form" class="task-form">
+                <div class="task-bar">
+                    <label for="task-input"><i class="fa-regular fa-pen-to-square"></i></label>
+                    <input type="text" id="task-input" class="task-input" required>
+                    <button type="submit"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div id="task-show" class="task-show">
+                </div>
+            </form>
+        </div>       
     </section>
         
         
@@ -214,6 +220,7 @@
     <script src="./js/date.js"></script>
     <script src="./js/greeting.js"></script>
     <script src="./js/todo.js"></script>
+    <script src="./js/task.js"></script>
     <script src="./js/start-action.js"></script>
     
     <script src="https://kit.fontawesome.com/e4704dcbbd.js" crossorigin="anonymous"></script>

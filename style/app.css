@@ -94,69 +94,8 @@
     }
 }
 
-.app-todo{
-    & #todo-form{
-        width: 100%;
-        & .todo-bar{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            border-radius: var(--radius-round);
-            background: var(--color-card-input);
-            padding: 10px 20px;
-            margin-bottom: 10px;
-            & input{
-                margin-left: 5px;
-                padding: 5px 5px;
-                color: #000;
-                font-size: 1em;
-                width: 100%;
-                background: inherit;
-            }
-            & .fa-plus{
-                /* color: #adadad; */
-                cursor: pointer;
-            }
-            & input:valid ~ button .fa-plus{
-                color: #000;
-            }
-        }
-        & #todo-show{
-            width: 100%;height: auto;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column-reverse;
-
-            & .box-todo-item{
-                padding: 15px 20px 15px 20px;
-                margin-bottom: 10px;
-                font-size: 1em;
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                align-items: center;
-                border-radius: var(--radius-round);
-                background: var(--color-card-input);
-                & span{
-                    width: calc(100% - 35px);
-                    word-wrap: break-word;
-                }
-                & i{
-                    margin-left: 10px;
-                    cursor: pointer;
-                    color: #adadad;
-                    &:hover{
-                        color: #000;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
+.app-todo i{}
+.app-task{}
 /* --------------------------------- */
 
 
