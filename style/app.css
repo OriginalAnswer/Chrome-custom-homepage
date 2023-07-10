@@ -13,8 +13,8 @@
     justify-content: center;
     gap: 10px;
     & .search-form{
-        max-width: 400px;
-        width: 100%;
+        flex-grow: 1;
+        flex-basis: 400px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
@@ -22,15 +22,13 @@
     & .search-bar{
         width: 100%;
         display: flex;
-        align-items: center;
+        justify-content: center;
         border-radius: 60px;
         padding: 20px 20px ;
         background: var(--search-background);
         & input{
             padding: 0px 5px;
-            /* margin: 0 5px; */
             color: #000;
-            /* font-size: 1em; */
             width: 100%;
             background: inherit;
         }
@@ -39,6 +37,7 @@
         }
         & i,.search-site-icon{
             color: #adadad;
+            margin-right: 5px;
         }
         & .fa-youtube{
             color: #ff0000;
@@ -53,6 +52,7 @@
 .app-quicklink{
     align-items: flex-start;
     justify-content: space-around;
+    
     gap:5px;
     & h3{
         flex-basis: 100%;
@@ -60,17 +60,19 @@
         margin: 10px 0 20px 0;
     }
     & .quicklink{
-        width: 55px;
+        flex-grow: 1;
+        flex-basis: 65px;
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center; 
         font-size: .7em;
         margin-bottom: 20px;
         & a{
             display: block;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
             & img{
                 width: 40px;
                 height: 40px;
@@ -80,6 +82,7 @@
             }
             & .q-title{
                 width: 100%;
+
                 text-overflow: ellipsis;
                 overflow: hidden;
                 word-break: break-word;
@@ -123,4 +126,30 @@
 }
 #quicklink-type-select{
     width: 50%
+}
+/* --------------------------------- */
+.add-card{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: #dcb3b3;
+    border-radius: var(--radius-set);
+    /* background-color: var(--set-card-background);
+    backdrop-filter: blur(4px) ;
+    -webkit-backdrop-filter: blur(4px) ; */
+}
+#add-door{
+    position: absolute;
+    z-index: 200;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    & .add-door-icon{
+        font-size: 1.5em;  
+        transition: transform 0.5s ease-in-out; 
+    }
+}
+#adddoor:checked ~ #add-door>i{
+    transform: rotate(90deg);
 }
