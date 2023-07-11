@@ -1,6 +1,6 @@
 * {
     font-family: sans-serif;
-    color: #000;
+    color: var(--color-font);
 }
 input, select{
     font-size: 1em;
@@ -11,7 +11,7 @@ button{
     &:hover{
         transform: scale(1.1);
         & i {
-            color: #000000;
+            color: var(--color-font);
         }
     }
     &:active{
@@ -60,19 +60,16 @@ button{
         padding: 15px 20px;
         margin-bottom: 10px;
         & input{
-            /* margin: 0 5px; */
             padding: 0px 5px;
-            color: #000;
-            /* font-size: 1em; */
+            color: var(--color-font);
             width: 100%;
             background: inherit;
         }
         & .fa-plus{
-            /* color: #adadad; */
             cursor: pointer;
         }
         & input:valid ~ button .fa-plus{
-            color: #000;
+            color: var(--color-font);
         }
     }
     & .task-show{
@@ -96,7 +93,7 @@ button{
             & i{
                 cursor: pointer;
                 color: #adadad;
-                &:hover{color: #000;}
+                &:hover{color: var(--color-font);}
             }
             & span{
                 width: 100%;
@@ -151,7 +148,7 @@ button{
     padding: 25px 15px;
     position: fixed;
     top: 0;right: 0;
-    background: hsla(0, 0%, 89%, 0.243);
+    background: var(--color-setbox-bg);
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
     backdrop-filter: blur(4px) ;
@@ -170,14 +167,14 @@ button{
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: var(--set-card-background);
+            background-color: var(--color-setbox-card-bg);
             border-radius: var(--radius-set);
             backdrop-filter: blur(4px) ;
             -webkit-backdrop-filter: blur(4px) ;
             & input[type=text],input[type=url],select{
                 border-radius: var(--radius2);
                 padding: 8px;
-                background: #ffffffb1;
+                background: var(--color-setbox-input);
                 backdrop-filter: blur(1px) ;
                 -webkit-backdrop-filter: blur(1px) ;
             }

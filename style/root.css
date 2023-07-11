@@ -11,3 +11,42 @@
     --color-s0-bg:#00000096;
     --color-task-item-checked: #8d8d8d;
 }
+@media (prefers-color-scheme: light) {
+    /* 라이트 모드에 적용할 스타일 정의 */
+    :root{
+        --color-theme:#fff;
+        --search-background: #f6f6f6;
+        --app-background: #f6f6f6;
+        --set-card-background: #e5e3e396;
+        --radius-app: 30px;
+        --radius2: 10px;
+        --radius-set: 10px;
+        --radius-round: 50px;
+        --color-card-input:#ffffff;
+        --color-s0-bg:#00000096;
+        --color-task-item-checked: #8d8d8d;
+        --color-font:#000;
+        --color-setbox-bg: hsla(0, 0%, 89%, 0.243);
+        --color-setbox-card-bg: hsla(0, 0%, 89%, 0.243);
+        --color-setbox-input: var(--color-theme);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    /* 다크 모드에 적용할 스타일 정의 */
+    :root{
+        --color-theme:#000000;
+        --search-background: #2e2e2e;
+        --app-background: #2e2e2e;
+        --set-card-background: #1b1b1b96;
+        --radius-app: 30px;
+        --radius2: 10px;
+        --radius-set: 10px;
+        --radius-round: 50px;
+        --color-card-input:#000000;
+        --color-task-item-checked: #757575;
+        --color-font:#fff;
+        --color-setbox-bg: hsla(0, 0%, 22%, 0.243);
+        --color-setbox-card-bg: hsla(0, 0%, 0%, 0.391);
+        --color-setbox-input: var(--color-theme);
+    }
+  }
