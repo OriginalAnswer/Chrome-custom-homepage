@@ -142,6 +142,7 @@ button{
 }
 /* 설정창 */
 #setbox{
+    overflow-y: scroll;
     z-index: 100;
     width: 350px;
     height: 100dvh;

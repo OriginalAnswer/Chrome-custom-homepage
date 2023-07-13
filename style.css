@@ -3,8 +3,6 @@
 @import url(./style/default.css);
 @import url(./style/section.css);
 @import url(./style/app.css);
-/* @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR&family=Quicksand&display=swap"); */
-/* font-family: 'Quicksand','Jua','Nanum Gothic','Noto Sans KR' */
 html,
 body {
     position: relative;
@@ -16,4 +14,5 @@ body {
 body{
     padding: 15px;
     font-size: 1em;
+    overflow: scroll;
 }
