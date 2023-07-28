@@ -94,12 +94,7 @@
     }
 }
 
-.app-task{
-    & input[type=checkbox]:checked + span{
-        text-decoration: line-through;
-        color:var(--color-task-item-checked);
-    }
-}
+
 /* --------------------------------- */
 
 
